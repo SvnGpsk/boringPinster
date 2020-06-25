@@ -1,6 +1,9 @@
 extends layout
 
-block content
-  h1= title
-  p Welcome to #{title}
-  p CI/CD working fine
+  body
+    .login
+        h1 Login
+        form(method='post')
+            input(type='text', name='u', placeholder='Username', required='required')
+            input(type='password', name='p', placeholder='Password', required='required')
+            button.btn.btn-primary.btn-block.btn-large(type='submit') Let me in.
