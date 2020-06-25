@@ -1,3 +1,0 @@
-D:\workspace\pinsterplanner\pinsterplanner\obj\Release\pinsterplanner.njsprojAssemblyReference.cache
-D:\workspace\pinsterplanner\pinsterplanner\obj\Release\pinsterplanner.njsproj.CoreCompileInputs.cache
-D:\workspace\pinsterplanner\pinsterplanner\bin\Microsoft.NodejsTools.WebRole.dll
