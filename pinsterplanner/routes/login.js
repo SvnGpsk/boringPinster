@@ -2,8 +2,10 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const express = require("express");
 const router = express.Router();
-router.get('/', (req, res) => {
-    res.send("respond with a resource");
+router.post('/', (req, res) => {
+    // TODO login logic
+    console.log(req.body);
+    res.redirect('/profile');
 });
 exports.default = router;
-//# sourceMappingURL=user.js.map
+//# sourceMappingURL=login.js.map

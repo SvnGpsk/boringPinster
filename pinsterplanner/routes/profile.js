@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express = require("express");
 const router = express.Router();
 router.get('/', (req, res) => {
-    res.send("respond with a resource");
+    res.render('profile', { title: 'Profile' });
 });
 exports.default = router;
-//# sourceMappingURL=user.js.map
+//# sourceMappingURL=profile.js.map

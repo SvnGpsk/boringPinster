@@ -4,6 +4,9 @@ import path = require('path');
 
 import index from './routes/index';
 import users from './routes/user';
+import profile from './routes/profile';
+import login from './routes/login';
+
 
 const app = express();
 
@@ -12,9 +15,11 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
 
 app.use(express.static(path.join(__dirname, 'public')));
-
+app.use(express.urlencoded());
 app.use('/', index);
 app.use('/users', users);
+app.use('/profile', profile);
+app.use('/login', login);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
